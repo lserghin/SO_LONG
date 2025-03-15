@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: marvin <marvin@student.42.fr>              +#+  +:+       +#+         #
+#    By: lserghin <lserghin@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/01/19 22:06:41 by lserghin          #+#    #+#              #
-#    Updated: 2025/03/06 00:18:44 by marvin           ###   ########.fr        #
+#    Updated: 2025/03/14 16:32:24 by lserghin         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -15,10 +15,10 @@ NAME_BONUS = so_long_bonus
 
 CC = cc
 CFLAGS = -Wall -Wextra -Werror
-LDFLAGS = -Llibft -lft -Lminilibx-linux -lmlx -lX11 -lXext -lm
+LDFLAGS = -Llibft -lft -L/usr/include/minilibx-linux -lmlx -lX11 -lXext -lm
 
-INCLUDES = -Iinclude -Iminilibx-linux
-INCLUDES_BONUS = -Iinclude_bonus -Iminilibx-linux
+INCLUDES = -Iinclude -I/usr/include/minilibx-linux
+INCLUDES_BONUS = -Iinclude_bonus -I/usr/include/minilibx-linux
 
 SRCS_DIR = source
 OBJS_DIR = object

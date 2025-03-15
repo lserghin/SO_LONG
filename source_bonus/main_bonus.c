@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main_bonus.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
+/*   By: lserghin <lserghin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/03 20:21:41 by lserghin          #+#    #+#             */
-/*   Updated: 2025/03/09 17:18:51 by marvin           ###   ########.fr       */
+/*   Updated: 2025/03/14 16:41:04 by lserghin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,6 +45,7 @@ void	ft_setup_graphics(t_game *game)
 	mlx_hook(game->win, 17, 0, ft_close_window, game);
 	ft_load_assets(game);
 	ft_render_map(game);
+	return ;
 }
 
 void	ft_map_valid(t_game *game)
@@ -65,6 +66,7 @@ void	ft_map_valid(t_game *game)
 	while (*map)
 		free(*map++);
 	free(game->map);
+	return ;
 }
 
 int	main(int ac, char **av)

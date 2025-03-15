@@ -3,17 +3,17 @@
 /*                                                        :::      ::::::::   */
 /*   so_long_bonus.h                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
+/*   By: lserghin <lserghin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/19 22:06:51 by lserghin          #+#    #+#             */
-/*   Updated: 2025/03/07 17:06:49 by marvin           ###   ########.fr       */
+/*   Updated: 2025/03/14 16:55:03 by lserghin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef SO_LONG_BONUS_H
 # define SO_LONG_BONUS_H
 
-# include "../minilibx-linux/mlx.h"
+# include "/usr/include/minilibx-linux/mlx.h"
 # include "../libft/libft.h"
 
 # define TILE_SIZE 32
@@ -36,7 +36,7 @@
 # define EXIT 'E'
 # define ENEMY 'G'
 
-# define ANIMATION_DELAY 2000
+# define ANIMATION_DELAY 20000
 # define SPEED_DELAY 3
 
 typedef struct s_player

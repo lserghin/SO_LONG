@@ -3,17 +3,17 @@
 /*                                                        :::      ::::::::   */
 /*   so_long.h                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
+/*   By: lserghin <lserghin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/19 22:06:51 by lserghin          #+#    #+#             */
-/*   Updated: 2025/03/07 17:18:59 by marvin           ###   ########.fr       */
+/*   Updated: 2025/03/14 16:31:35 by lserghin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef SO_LONG_H
 # define SO_LONG_H
 
-# include "../minilibx-linux/mlx.h"
+# include "/usr/include/minilibx-linux/mlx.h"
 # include "../libft/libft.h"
 
 # define TILE_SIZE 32

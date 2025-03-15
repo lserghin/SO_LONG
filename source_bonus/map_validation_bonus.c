@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   map_validation_bonus.c                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
+/*   By: lserghin <lserghin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/03 20:21:47 by lserghin          #+#    #+#             */
-/*   Updated: 2025/03/07 17:15:24 by marvin           ###   ########.fr       */
+/*   Updated: 2025/03/14 17:01:33 by lserghin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -113,8 +113,7 @@ int	ft_check_map_path_valid(t_game *game)
 		mapline = *map;
 		while (*mapline)
 		{
-			if (*mapline == COLLECTABLE || *mapline == EXIT
-				|| *mapline == ENEMY)
+			if (*mapline == COLLECTABLE || *mapline == EXIT)
 				return (0);
 			mapline++;
 		}

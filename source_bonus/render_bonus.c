@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   render_bonus.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
+/*   By: lserghin <lserghin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/03 20:22:11 by lserghin          #+#    #+#             */
-/*   Updated: 2025/03/06 16:22:43 by marvin           ###   ########.fr       */
+/*   Updated: 2025/03/14 16:43:14 by lserghin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,6 +35,7 @@ void	ft_render_tile_utils(t_game *game, int x, int y)
 			mlx_put_image_to_window(game->mlx, game->win, game->exitc_img,
 				x * TILE_SIZE, y * TILE_SIZE);
 	}
+	return ;
 }
 
 void	ft_render_tile(t_game *game, int x, int y)
@@ -72,6 +73,7 @@ void	ft_render_map(t_game *game)
 		}
 		y++;
 	}
+	return ;
 }
 
 int	ft_render_frame(t_game *game)

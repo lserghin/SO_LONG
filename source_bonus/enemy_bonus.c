@@ -40,16 +40,16 @@ void	ft_update_enemy_image(t_game *game)
 	mlx_destroy_image(game->mlx, game->enemy_img);
 	if (game->e.direction == 0)
 		game->enemy_img = mlx_xpm_file_to_image(game->mlx,
-				"assets/m/m_u.xpm", &(int){TILE_SIZE}, &(int){TILE_SIZE});
+				"textures/m/m_u.xpm", &(int){TILE_SIZE}, &(int){TILE_SIZE});
 	else if (game->e.direction == 1)
 		game->enemy_img = mlx_xpm_file_to_image(game->mlx,
-				"assets/m/m_d.xpm", &(int){TILE_SIZE}, &(int){TILE_SIZE});
+				"textures/m/m_d.xpm", &(int){TILE_SIZE}, &(int){TILE_SIZE});
 	else if (game->e.direction == 2)
 		game->enemy_img = mlx_xpm_file_to_image(game->mlx,
-				"assets/m/m_l.xpm", &(int){TILE_SIZE}, &(int){TILE_SIZE});
+				"textures/m/m_l.xpm", &(int){TILE_SIZE}, &(int){TILE_SIZE});
 	else if (game->e.direction == 3)
 		game->enemy_img = mlx_xpm_file_to_image(game->mlx,
-				"assets/m/m_r.xpm", &(int){TILE_SIZE}, &(int){TILE_SIZE});
+				"textures/m/m_r.xpm", &(int){TILE_SIZE}, &(int){TILE_SIZE});
 	if (!game->enemy_img)
 		ft_exitwitherror(game, "FAILED TO LOAD ENEMY TEXTURE!\n");
 	return ;
